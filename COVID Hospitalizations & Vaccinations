@@ -1,0 +1,46 @@
+-- Looking at total case vs total deaths in the United States w/o null values
+-- Shows the percentage of dying given you contract covid in the US
+
+Select Location, date, total_cases, total_deaths, (Total_deaths/Total_Cases)*100 as DeathPercentage
+From PortfolioProject.dbo.CovidDeaths$
+WHERE location like '%states%' and total_cases is not null and total_deaths is not null
+order by 1,2
+
+
+-- Looking at countries with the highest infection rate compared to population
+
+Select Location, MAX(total_cases) as HighestInfectionCount, MAX((Total_cases/population))*100 as PercentPopulationInfected
+From PortfolioProject.dbo.CovidDeaths$
+-- WHERE location like '%states%' and total_cases is not null and total_deaths is not null
+group by Location, population
+order by PercentPopulationInfected desc
+
+
+-- Showing countries with their continuous weekly hospital admissions in the month of January 2022
+-- Exclude countries without hospitalization metrics (typically 3rd world countries)
+
+SELECT location, date, weekly_hosp_admissions
+FROM PortfolioProject.dbo.CovidDeaths$ A
+WHERE A.date >= Convert(datetime, '2022-01-01') and weekly_hosp_admissions is not null
+GROUP BY Location, date, weekly_hosp_admissions
+ORDER BY 1 asc, 2 asc
+
+
+-- US hospitalizations that required intesive care during the first week of 2022
+-- Compute the average amount of ICU Patients per Hospitailzations by converting nvarchar to decimal
+
+alter table PortfolioProject.dbo.CovidDeaths$
+alter column weekly_hosp_admissions decimal
+alter table PortfolioProject.dbo.CovidDeaths$
+alter column icu_patients decimal
+
+SELECT location, date, cast(icu_patients as int) as [ICU Patients], cast(weekly_hosp_admissions as int) as [7-day Hospital Admissions],
+	cast(icu_patients/weekly_hosp_admissions as decimal(6,5))*100 as [% ICU Patients per Hospitailzations]
+FROM PortfolioProject.dbo.CovidDeaths$ A
+WHERE A.date between Convert(datetime, '2022-01-01') and Convert(datetime, '2022-01-07') 
+	and location = 'United States' and weekly_hosp_admissions is not null
+ORDER BY 2 asc
+
+
+-- Average US ICU Patient admittance per Hospitalizations for the first week of 2022
+-- HAEEEEEELLLLLPPPPPPP
