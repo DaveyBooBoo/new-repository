@@ -1,7 +1,7 @@
 # Davis Stroud Portfolio
-#### Data Analyst well versed in SQL, Python, Tableau, Power BI @DavisStroud 📊 📈
-
-
+#### Data Analyst well versed in SQL, Python, Tableau, Power BI [@DavisStroud](https://www.linkedin.com/in/davis-stroud/) 📊 📈
+#
+#
 ## **COVID Hosipitalizations** 🏥
 ##### _In this project we use SQL Server to explore global COVID 19 data._
 [COVID Hosipitalizations](https://github.com/DavisStroud/PortfolioProjects/blob/1565496498734279c5b24cb00e77aae75aafb8e1/COVID%20Hospitalizations%20&%20Vaccinations)
