@@ -1,5 +1,4 @@
-# Davis Stroud 
-#   Portfolio
+# Davis Stroud /n Portfolio
 #### Data Analyst well versed in SQL, Python, Tableau, Power BI 👍
 
 
@@ -10,7 +9,7 @@
 ### **COVID Dashboard**
 ##### _Tableua dashboard on COVID 19 data exploration_
 
-[Dashboard 1.pdf](https://github.com/DavisStroud/PortfolioProjects/files/8064573/Dashboard.1.pdf)
+[COVID Dashboard](https://github.com/DavisStroud/PortfolioProjects/files/8064573/Dashboard.1.pdf)
 
 ### **Real Estate Data Cleaning (SQL)**
 ##### _In this project we take raw housing data and transform it in SQL Server to make it more usable for analysis._
