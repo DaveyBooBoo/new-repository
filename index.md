@@ -1,5 +1,5 @@
 # Davis Stroud Portfolio
-#### Data Analyst well versed in SQL, Python, Tableau, Power BI 📊 📈
+#### Data Analyst well versed in SQL, Python, Tableau, Power BI @DavisStroud 📊 📈
 
 
 ## **COVID Hosipitalizations** 🏥
