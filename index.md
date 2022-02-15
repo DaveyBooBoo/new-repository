@@ -2,11 +2,14 @@
 #### Data Analyst well versed in SQL, Python, Tableau, Power BI [@DavisStroud](https://www.linkedin.com/in/davis-stroud/) 📊 📈. 
 
 
+<details><summary>CLICK ME</summary>
+<p>
 ## **COVID Hosipitalizations** 🏥
 ##### _In this project we use SQL Server to explore global COVID 19 data._. 
 ![covid 19](https://user-images.githubusercontent.com/98071295/153966522-af946e69-3347-4fd9-a0f9-b790e310fba6.jpeg)
 [COVID Hosipitalizations](https://github.com/DavisStroud/PortfolioProjects/blob/1565496498734279c5b24cb00e77aae75aafb8e1/COVID%20Hospitalizations%20&%20Vaccinations)
-
+</p>
+  </details>
 
 ## **COVID Dashboard** 😷
 ##### _Tableua dashboard on COVID 19 data exploration_. 
