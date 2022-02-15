@@ -12,7 +12,7 @@
 ## **COVID Dashboard** 😷
 ##### _Tableua dashboard on COVID 19 data exploration_. 
 
-![Tableua](https://user-images.githubusercontent.com/98071295/153966618-84c7cf72-efbb-4716-a1a1-354524976f94.jpeg)
+![Tableua](https://user-images.githubusercontent.com/98071295/153966618-84c7cf72-efbb-4716-a1a1-354524976f94.jpeg). 
 [COVID Dashboard](https://github.com/DavisStroud/PortfolioProjects/files/8064573/Dashboard.1.pdf)
 
 
